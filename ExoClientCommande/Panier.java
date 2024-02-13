@@ -1,11 +1,16 @@
 package ExoClientCommande;
 
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Panier {
     Map<Produit, Integer> produits;
 
+    public Panier(Client client) {
+        this.produits = new HashMap<>();
+            
+        };
+    
     public float getTotalTTC() {
         float total = 0;
         for (Produit produit : produits.keySet()) {
@@ -37,4 +42,6 @@ public class Panier {
         this.produits.putIfAbsent(produit, 0);
         this.produits.put(produit, this.produits.get(produit) + quantite);
     }
+
+
 }
