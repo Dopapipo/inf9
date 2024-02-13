@@ -1,4 +1,4 @@
-package cri;
+package fr.pantheonsorbonne.cri;
 
 public class ProduitPhysique extends Produit {
     float fraisDeLivraison;

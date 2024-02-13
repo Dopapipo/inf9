@@ -1,13 +1,11 @@
-package fr.pantheonsorbonne.cri.ClientCommandeTest;
+package fr.pantheonsorbonne.cri;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-import cri.pantheonsorbonne.CarteDeCredit;
+public class CarteDeCreditTest {
 
-public class CarteDeCreditTest{
-
-     @Test
+    @Test
     public void testPayer_sufficientFunds() {
         CarteDeCredit carte = new CarteDeCredit("1234567890123456", 123, "12/24", 1000.0);
         assertTrue(carte.payer(500));
@@ -47,5 +45,4 @@ public class CarteDeCreditTest{
         assertEquals(1000.0, carte.getArgentDisponible(), 0.01);
     }
 
-       
 }

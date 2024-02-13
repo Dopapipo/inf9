@@ -1,4 +1,4 @@
-package cri;
+package fr.pantheonsorbonne.cri;
 
 public class ProduitDigital extends Produit{
     public ProduitDigital(float prix, String nom, String description, int stock, int id) {

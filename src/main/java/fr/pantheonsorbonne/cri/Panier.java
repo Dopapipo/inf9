@@ -1,4 +1,4 @@
-package cri;
+package fr.pantheonsorbonne.cri;
 
 import java.util.HashMap;
 import java.util.Map;
