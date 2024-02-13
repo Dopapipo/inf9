@@ -20,7 +20,7 @@ public class CarteDeCredit {
         return this.numero == numero && this.cvv == cvv && this.dateExpiration.equals(dateExpiration);
     }
     public boolean deposerArgent(int argent) {
-        if (argent < 0) return false; // On ne peut pas déposer un montant négatif (retrait d'argent
+        if (argent < 0) return false; // On ne peut pas déposer un montant négatif (retrait d'argent)
         argentDisponible += argent;
         return true;
     }
