@@ -15,7 +15,6 @@ public class Produit {
         this.id = id;
     }
 
-
     public float getPrix() {
         return prix;
     }
