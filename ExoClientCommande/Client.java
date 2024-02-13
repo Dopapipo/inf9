@@ -1,6 +1,7 @@
 package ExoClientCommande;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Client {
@@ -42,7 +43,7 @@ public class Client {
     }
 
     public void validerCommande() {
-        Commande commande = new Commande(panier);
+        Commande commande = new Commande(panier, new Date());
         if (this.carteDeCredit.payer(panier.getTotalTTC())) {
             commande.valider();
         }
