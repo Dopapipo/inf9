@@ -1,4 +1,4 @@
-package ExoClientCommande;
+package cri;
 
 public class CarteDeCredit {
     String numero;
@@ -26,6 +26,10 @@ public class CarteDeCredit {
         if (argent < 0) return false; // On ne peut pas déposer un montant négatif (retrait d'argent)
         argentDisponible += argent;
         return true;
+    }
+
+    public double getArgentDisponible() {
+        return argentDisponible;
     }
 
 
