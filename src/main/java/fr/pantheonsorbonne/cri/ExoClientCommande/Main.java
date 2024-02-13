@@ -1,4 +1,4 @@
-package ExoClientCommande;
+package fr.pantheonsorbonne.cri.ExoClientCommande;
 
 public class Main {
     public static void main(String[] args) {

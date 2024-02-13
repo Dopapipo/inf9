@@ -1,11 +1,12 @@
-package ExoCalculatrice;
-public class OpSoustraction extends Operation{
+package fr.pantheonsorbonne.cri.ExoCalculatrice;
+public class OpAjout extends Operation{
 
     @Override
     public Nombre execute(Nombre a, Nombre b) {
         if (a.getValeur() != null && b.getValeur() != null) {
-            return new Nombre(a.getValeur() - b.getValeur());
+            return new Nombre(a.getValeur() + b.getValeur());
         }
         return null;
     }
+    
 }

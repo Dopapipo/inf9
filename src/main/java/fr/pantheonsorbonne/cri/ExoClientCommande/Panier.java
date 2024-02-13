@@ -1,4 +1,4 @@
-package ExoClientCommande;
+package fr.pantheonsorbonne.cri.ExoClientCommande;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,5 @@
-package ExoCalculatrice;
+package fr.pantheonsorbonne.cri.ExoCalculatrice;
+
 public class Main {
     public static void main(String[] args) {
         Nombre a = new Nombre(5.0f);

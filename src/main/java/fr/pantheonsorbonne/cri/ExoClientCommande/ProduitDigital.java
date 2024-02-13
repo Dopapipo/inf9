@@ -1,4 +1,4 @@
-package ExoClientCommande;
+package fr.pantheonsorbonne.cri.ExoClientCommande;
 
 public class ProduitDigital extends Produit{
     public ProduitDigital(float prix, String nom, String description, int stock, int id) {

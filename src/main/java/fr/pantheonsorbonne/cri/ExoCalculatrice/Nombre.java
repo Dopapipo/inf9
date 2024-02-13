@@ -1,4 +1,4 @@
-package ExoCalculatrice;
+package fr.pantheonsorbonne.cri.ExoCalculatrice;
 public class Nombre {
     private Float valeur;
     public Nombre(Float valeur) {
