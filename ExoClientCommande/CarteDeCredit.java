@@ -1,7 +1,5 @@
 package ExoClientCommande;
 
-import java.util.Date;
-
 public class CarteDeCredit {
     String numero;
     int cvv;

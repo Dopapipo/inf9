@@ -1,7 +1,5 @@
 package ExoClientCommande;
 
-import java.util.Date;
-
 public class Main {
     public static void main(String[] args) {
         ProduitPhysique p1 = new ProduitPhysique(10.0f, "p1", "p1", 10, 1, 5.0f);
