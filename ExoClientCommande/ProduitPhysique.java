@@ -6,4 +6,8 @@ public class ProduitPhysique extends Produit {
         super(prix, nom, description, stock, id);
         this.fraisDeLivraison = fraisDeLivraison;
     }
+    @Override
+    public float getPrix() {
+        return super.getPrix() + this.fraisDeLivraison;
+    }
 }
