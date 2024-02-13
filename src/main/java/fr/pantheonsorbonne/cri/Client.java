@@ -1,4 +1,4 @@
-package cri;
+package fr.pantheonsorbonne.cri;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -49,9 +49,11 @@ public class Client {
         }
         commandesPassees.add(commande);
     }
+
     public boolean peutPayerCommande() {
         return this.carteDeCredit.getArgentDisponible() >= panier.getTotalTTC();
     }
+
     public void passerCommande(CentreDistribution centreDistribution) {
         if (this.verifierStock(centreDistribution) && this.peutPayerCommande()) {
             Commande commande = new Commande(panier, new Date());
@@ -60,8 +62,9 @@ public class Client {
             commandesPassees.add(commande);
             centreDistribution.ajouterCommande(this, commande);
         }
-        
+
     }
+
     public boolean verifierStock(CentreDistribution centreDistribution) {
         return centreDistribution.verifierStock(panier);
     }
