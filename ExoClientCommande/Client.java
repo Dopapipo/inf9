@@ -11,10 +11,10 @@ public class Client {
     String prenom;
     String adresse;
     String email;
-    int telephone;
+    String telephone;
     List <Commande> commandesPassees = new ArrayList<>();
 
-    public Client(String nom, String prenom, String adresse, String email, int telephone,
+    public Client(String nom, String prenom, String adresse, String email, String telephone,
             CarteDeCredit carteDeCredit) {
         this.nom = nom;
         this.prenom = prenom;
