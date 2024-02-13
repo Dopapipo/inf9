@@ -20,4 +20,13 @@ public class Produit {
         return prix;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Produit) {
+            Produit produit = (Produit) obj;
+            return produit.id == this.id;
+        }
+        return false;
+    }
+
 }
