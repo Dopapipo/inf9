@@ -1,4 +1,4 @@
-package fr.pantheonsorbonne.cri.ExoClientCommande;
+package cri;
 
 public class ProduitPhysique extends Produit {
     float fraisDeLivraison;
