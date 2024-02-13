@@ -1,3 +1,4 @@
+package ExoCalculatrice;
 public class Calculateur {
     Nombre a;
     Nombre b;

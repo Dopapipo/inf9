@@ -1,3 +1,4 @@
+package ExoCalculatrice;
 public class Nombre {
     private Float valeur;
     public Nombre(Float valeur) {
