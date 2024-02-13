@@ -22,6 +22,7 @@ public class Client {
         this.email = email;
         this.telephone = telephone;
         this.carteDeCredit = carteDeCredit;
+        this.panier = new Panier();
     }
 
     public void ajouterProduit(Produit produit, int quantite) {

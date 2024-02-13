@@ -10,4 +10,9 @@ public class ProduitPhysique extends Produit {
     public float getPrix() {
         return super.getPrix() + this.fraisDeLivraison;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }   
 }

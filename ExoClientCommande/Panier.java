@@ -6,7 +6,7 @@ import java.util.Map;
 public class Panier {
     Map<Produit, Integer> produits;
 
-    public Panier(Client client) {
+    public Panier() {
         this.produits = new HashMap<>();
             
         };
