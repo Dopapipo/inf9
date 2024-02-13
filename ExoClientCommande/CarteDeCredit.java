@@ -28,5 +28,9 @@ public class CarteDeCredit {
         return true;
     }
 
+    public double getArgentDisponible() {
+        return argentDisponible;
+    }
+
 
 }
