@@ -1,4 +1,4 @@
-package cri;
+package fr.pantheonsorbonne.cri;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,6 +37,7 @@ public class CentreDistribution {
         }
         return false;
     }
+
     public boolean verifierStock(Panier panier) {
         for (Map.Entry<Produit, Integer> entry : panier.produits.entrySet()) {
             Produit produit = entry.getKey();
@@ -47,6 +48,7 @@ public class CentreDistribution {
         }
         return true;
     }
+
     public void validerCommande(Commande commande) {
         for (Map.Entry<Produit, Integer> entry : commande.panier.produits.entrySet()) {
             Produit produit = entry.getKey();
@@ -55,6 +57,7 @@ public class CentreDistribution {
         }
         commande.valider();
     }
+
     public void ajouterCommande(Client client, Commande commande) {
         if (commandesClients.containsKey(client)) {
             commandesClients.get(client).add(commande);
